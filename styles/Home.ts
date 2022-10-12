@@ -54,7 +54,9 @@ export const ConnectContainer = styled.section`
     text-align: center;  
 `
 export const SectionTitle = styled.h2`
-    width: 500px;    
+    width: 500px;
+    margin: 10px auto; 
+    text-align: center;    
 `
 export const SectionDescription = styled.p`
     width: 300px;
@@ -144,4 +146,99 @@ export const ToolsDesc = styled.p`
     font-size: 15px;
     margin: 5px 0;
     width: 300px;
+`
+
+// Profile section
+export const FindDeveloperSection = styled.div`
+    display: flex;
+    flex-direction: column; 
+    margin: 20px 0;   
+`
+
+export const PerfilDescription = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    width: 80%;
+    margin: 20px auto;
+    height: auto;
+`
+export const Perfil = styled.div`
+    display: flex;
+    width: 500px;
+    height: 165px;
+    justify-content: space-between;
+`
+export const PerfilImage = styled.img`
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid white;
+`
+
+export const PerfilLeft = styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+
+    &>p {
+        margin: 0;
+        height: 22px;
+    }
+`
+export const PerfilData = styled.div`
+    width: 350px;
+`
+
+// Projects Section
+
+export const JoinToProjects = styled.div`
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+`
+
+export const ProjectsContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    width: 80%;
+    height: 500px;    
+    `
+
+export const ProjectCard = styled.div`
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #0582ca;
+    display: flex;
+    flex-direction: column;
+    &:nth-child(2) {
+        margin-top: 20px !important;        
+    }
+    `
+
+export const ProjectName = styled.h4`
+
+`
+
+export const ProjectInf = styled.div`
+    display: flex;
+    justify-content: space-between;
+    &>p{
+        width: fit-content;
+    }
+`
+
+export const ProjectDevs = styled.div`
+
+`
+
+export const Areas = styled.p`
+
 `
